@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Local-network exception for the Live Ground Station (ESP32 serves plain
+	     HTTP on the LAN at fringe-station.local or a numeric IP). iOS 17+ blocks
+	     cleartext connections to local addresses without this. This partial file
+	     is merged with the generated Info.plist at build time
+	     (GENERATE_INFOPLIST_FILE = YES + INFOPLIST_FILE). -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fringe</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
