@@ -1,5 +1,6 @@
 # Fringe — Cryptographic Radar Earth Observation & Climate Geodesy (iOS)
 
+[![Live Web Showcase](https://img.shields.io/badge/Live%20Showcase-fringe--earth.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fringe-earth.vercel.app)
 [![Platform: iOS 18+](https://img.shields.io/badge/Platform-iOS%2018%2B-blue?logo=apple&style=for-the-badge)](https://developer.apple.com/ios/)
 [![Swift 5.10+](https://img.shields.io/badge/Swift-5.10%2B-F05138?logo=swift&style=for-the-badge)](https://swift.org)
 [![Track: IEEE ClimateChain 4](https://img.shields.io/badge/IEEE%20Track%204-Climate%20Monitoring-2ea44f?style=for-the-badge)](https://devpost.com)
@@ -7,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)](LICENSE)
 
 > **Verifiable climate geodesy on iOS:** Fringe turns spaceborne Synthetic Aperture Radar Interferometry (InSAR) and continuous millimetric GPS into an intuitive, living visualization—anchoring environmental baseline data to the Bitcoin blockchain via OpenTimestamps to eliminate greenwashing and retroactive corporate tampering.
+>
+> 🌐 **Interactive Web Showcase:** [https://fringe-earth.vercel.app](https://fringe-earth.vercel.app)
 
 ---
 
@@ -137,6 +140,11 @@ xcodebuild test -project ios-fringe/Fringe.xcodeproj -scheme FringeTests -destin
 │   ├── FringeTests/               # XCTest verification suite
 │   ├── Hardware/                  # ESP32 micro-geodetic ground station sketch & wiring
 │   └── Tools/                     # Python scripts for evidence hashing & Bitcoin anchoring
+├── web/                           # Live Web Showcase (Vercel deployment)
+│   ├── index.html                 # Apple/Linear-grade showcase with titanium chassis
+│   ├── vercel.json                # Vercel deployment routing configuration
+│   ├── walkthrough_preview.mp4    # Optimized walkthrough video loop
+│   └── screenshots/               # 10 verified Retina presentation captures
 └── submission/                    # IEEE Hackathon Submission Materials
     ├── DEVPOST.md                 # Devpost narrative & judging criteria alignment
     ├── DEMO_SCRIPT.md             # Timecoded 68s walkthrough shot list
